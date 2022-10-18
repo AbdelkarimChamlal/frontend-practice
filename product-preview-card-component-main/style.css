@@ -133,7 +133,7 @@ main{
 
     .product-preview{
         width: 50%;
-        content: url('/images/image-product-desktop.jpg');
+        content: url('./images/image-product-desktop.jpg');
     }
 }
     
