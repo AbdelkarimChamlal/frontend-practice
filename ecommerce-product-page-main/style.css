@@ -220,6 +220,10 @@ ul a{
     cursor: pointer;
 }
 
+.add-to-cart img{
+    filter: invert(125%) sepia(73%) saturate(141%) hue-rotate(0deg) brightness(253%) contrast(199%);
+}
+
 .item-count{
     font-weight: 700;
 }
