@@ -8,7 +8,7 @@
 }
 
 :root{
-    --primary-color: hsl(26, 100%, 55%);
+    --primary-color: #ff7d1a;
     --secondary-color: hsl(25, 100%, 94%);
 
     --nuetrals-100: hsl(220, 13%, 13%);
@@ -123,11 +123,11 @@ ul a{
 
 .swipe-left img:hover, .swipe-right img:hover{
     cursor: pointer;
-    box-shadow: 0 0 25px 5px #00000080;
+    box-shadow: 0 0 100px 55px #ff7d1a59;
 }
 
 .swipe-left img{
-    padding: 1rem;
+    padding: .8rem;
     background-color: var(--nuetrals-400);
     border-radius: 50%;
 }
@@ -140,7 +140,7 @@ ul a{
 }
 
 .swipe-right img{
-    padding: 1rem;
+    padding: .8rem;
     background-color: var(--nuetrals-400);
     border-radius: 50%;
 }
