@@ -8,6 +8,12 @@ const increase = document.querySelector('.increase-item');
 const decrease = document.querySelector('.reduce-item');
 const amount = document.querySelector('.item-count');
 const addToCart = document.querySelector('.add-to-cart');
+const cart = document.querySelector('.cart');
+const shopingCart = document.querySelector('.shoping-cart');
+const emptyShoppingCartCase = document.querySelector('.cart-content-empty-case');
+const hasItemsShoppingCartCase = document.querySelector('.cart-content-full-case');
+const body = document.querySelector('body');
+
 let selectedImageOrder = 0;
 let selectedAmount = 0;
 let addedAmount = 0;
@@ -74,7 +80,18 @@ decrease.addEventListener('click', () => {
 
 addToCart.addEventListener('click', () => {
     addedAmount += selectedAmount;
-    // document.querySelector('.cart-count').textContent = addedAmount;
     selectedAmount = 0;
     amount.textContent = selectedAmount;
 });
+
+cart.addEventListener('click', () => {
+    if(addedAmount > 0) {
+        emptyShoppingCartCase.style.display = 'none';
+        hasItemsShoppingCartCase.style.display = 'block';
+    }else {
+        emptyShoppingCartCase.style.display = 'flex';
+        hasItemsShoppingCartCase.style.display = 'none';
+    }
+    shopingCart.classList.toggle('show');
+});
+

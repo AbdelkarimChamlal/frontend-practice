@@ -90,7 +90,7 @@ ul a{
 }
 
 .show{
-    display: block;
+    display: block !important;
 }
 
 .hide{
@@ -102,6 +102,9 @@ ul a{
     z-index: 2;
 }
 
+.cart:hover{
+    cursor: pointer;
+}
 
 .preview{
     position:relative;
@@ -230,4 +233,55 @@ ul a{
 
 .reduce-item:hover, .increase-item:hover{
     cursor: pointer;
+}
+
+.shoping-cart{
+    display: none;
+    position: absolute;
+    top: 90px;
+    z-index: 5;
+    width: 95%;
+    left: 2.5%;
+    background-color: var(--nuetrals-white);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.shoping-cart h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--nuetrals-100);
+    padding: 1rem 1.5rem;
+}
+
+.shoping-cart hr{
+    border: 1px solid var(--nuetrals-400);
+}
+
+.shoping-cart .cart-content-empty-case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: min(30vh, 100px);
+    color: var(--nuetrals-200);
+}
+
+
+.item{
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    color: var(--nuetrals-200);
+    gap: 1rem;
+}
+
+.item-image{
+    width: min(100px, 20vw);
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
