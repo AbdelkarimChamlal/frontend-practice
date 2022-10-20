@@ -23,8 +23,11 @@ toggleMenu.addEventListener('click', () => {
 
 menu.addEventListener('click', (event) => {
     if (event.target.tagName === 'NAV'){
+        toggleMenuImgs.forEach(element => {
+            element.classList.toggle('hide');
+            element.classList.toggle('show');
+        });
         menu.classList.remove('open');
-
     } 
 } );
 
