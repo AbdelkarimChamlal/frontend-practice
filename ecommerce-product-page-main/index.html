@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+<header>
+  <div class="toggle-menu">
+    <img src="./images/icon-menu.svg" alt="menu icon" class="toggle-menu-img show">
+    <img src="./images/icon-close.svg" alt="menu icon" class="toggle-menu-img hide">
+  </div>
+
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="cart ma-l">
+    <img src="./images/icon-cart.svg" alt="cart icon">
+  </div>
+
+  <div class="avatar">
+    <img src="./images/image-avatar.png" alt="avatar">
+  </div>
+</header>
+
+<section class="preview">
+  <div class="product-images">
+    <div class="product-image show" >
+      <img src="./images/image-product-1.jpg" alt="product image">
+    </div>
+    <div class="product-image hide">
+      <img src="./images/image-product-2.jpg" alt="product image">
+    </div>
+    <div div class="product-image hide">
+      <img src="./images/image-product-3.jpg" alt="product image">
+    </div>
+    <div div class="product-image hide">
+      <img src="./images/image-product-4.jpg" alt="product image">
+    </div>
+  </div>
+
+  <div class="swipe-left">
+    <img src="./images/icon-previous.svg" alt="arrow left">
+  </div>
+
+  <div class="swipe-right">
+    <img src="./images/icon-next.svg" alt="arrow right">
+  </div>
+
+</section>
+
+  
+  
+  
+  
+  
+<section class="product-details container">
+  <div class="product-company">
+    Sneaker Company
+  </div>
+  <div class="product-name">
+    <h1>Fall Limited Edition Sneakers</h1>
+  </div>
+  <div class="product-description">
+    These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+  </div>
+  <div class="product-price">
+    <div class="current-price">
+      $125.00
+    </div>
+    <div class="discount">
+      50%
+    </div>
+    <div class="old-price ma-l">
+      $250.00
+    </div>
+  </div>
+</section>
+
+<section class="cart-items container">
+  <div class="selected-details">
+    <div class="reduce-item">
+      <img src="./images/icon-minus.svg" alt="minus icon">
+    </div>
+    <div class="item-count">
+      0
+    </div>
+    <div class="increase-item">
+      <img src="./images/icon-plus.svg" alt="plus icon">
+    </div>
+  </div>
+  <div class="add-to-cart">
+    <a><img src="./images/icon-cart.svg" alt="cart">Add to cart</a>
+  </div>
+</section>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="scripts.js"></script>
+</html>
