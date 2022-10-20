@@ -285,3 +285,21 @@ ul a{
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.checkout a{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
