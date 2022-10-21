@@ -13,7 +13,7 @@ const shopingCart = document.querySelector('.shoping-cart');
 const emptyShoppingCartCase = document.querySelector('.cart-content-empty-case');
 const hasItemsShoppingCartCase = document.querySelector('.cart-content-full-case');
 const body = document.querySelector('body');
-
+const thumbnailImages = document.querySelectorAll('.product-thumbnail');
 let selectedImageOrder = 0;
 let selectedAmount = 0;
 let addedAmount = 0;
@@ -95,3 +95,15 @@ cart.addEventListener('click', () => {
     shopingCart.classList.toggle('show');
 });
 
+
+
+thumbnailImages.forEach((thumbnailImage, index) => {
+    thumbnailImage.addEventListener('click', () => {
+        images.forEach((image) => {
+            image.classList.remove('show');
+            image.classList.add('hide');
+        });
+        images[index].classList.remove('hide');
+        images[index].classList.add('show');
+    });
+});
