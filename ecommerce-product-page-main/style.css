@@ -203,7 +203,10 @@ ul a{
     margin: 0 auto;
     gap: 1rem;
     padding: 1rem 0;
+    position: relative;
 }
+
+
 
 
 .product-thumbnail img{
@@ -216,7 +219,7 @@ ul a{
 
 .product-thumbnail img:hover{
     cursor: pointer;
-    border: 2px solid var(--primary-color);
+    position: relative;
     filter: opacity(50%);
     box-sizing: margin-box;
 }
