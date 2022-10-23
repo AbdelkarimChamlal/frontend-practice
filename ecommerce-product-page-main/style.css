@@ -219,9 +219,10 @@ ul a{
 
 .product-thumbnail img:hover{
     cursor: pointer;
-    position: relative;
+    box-shadow: 0 0 0 2px var(--primary-color);
+    /* apply opacity without effecting the box shadow */
     filter: opacity(50%);
-    box-sizing: margin-box;
+
 }
 
 .selected-details{
